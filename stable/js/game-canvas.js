@@ -20,7 +20,5 @@ gameCanvas.addCanvas = function(selector, w, h) {
 gameCanvas.addBgCanvas = function(selector, w, h) {
     const cobj = this.addCanvas(selector, w, h);
     cobj.canvas.style.background = 'url(image/bg.png)';
-    cobj.context.fillStyle = '#004488';
-    cobj.context.fillRect(100, 100, 1000, 600);
     return cobj;
 }
